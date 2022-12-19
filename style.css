@@ -8,29 +8,7 @@
 }  
 
 
-@font-face {
-    font-family:'satoshi-black' ;
-    src: url(Satoshi-Black.otf);
-}
 
-@font-face {
-    font-family:'satoshi-bold' ;
-    src: url(Satoshi-Bold.otf);
-}
-
-@font-face {
-    font-family:'satoshi-medium' ;
-    src: url(Satoshi-Medium.otf);
-}
-@font-face {
-    font-family:'satoshi-regular' ;
-    src: url(Satoshi-Regular.otf);
-}
-
-@font-face {
-    font-family:'satoshi-light' ;
-    src: url(Satoshi-Light.otf);
-}
 
 
 .board{
@@ -71,7 +49,7 @@
 
 
 .shortcut-links{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -91,7 +69,8 @@
 .shortcut-links a p {
    color: #000;
    font-size: 14px;
-   font-family:'satoshi-bold' ;
+   font-weight: 700;
+   margin-top: 2px;
 }
 
 
@@ -139,6 +118,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header-con img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   object-fit: cover;
 }
 
 .summ-flex{
@@ -258,6 +244,67 @@
    color: #fff;
 }
 
+
+
+@media screen and (max-width:900px){
+    .sidebar{
+        display: none;
+    }
+
+    .main{
+        padding-left:0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .bal-box{
+        width: auto;
+        flex-direction: column;
+    }
+
+    .bal-box img{
+        display: none;
+    }
+
+    .summ-flex{
+        flex-direction: column;
+    }
+
+    .summ-left{
+        flex-basis: 100%;
+    }
+
+    .summ-right{
+        flex-basis: 100%;
+    }
+
+    .card-text{
+        flex-basis: 100%;
+    }
+
+    .virtual{
+        flex-basis: 100%;
+        display: none;
+    }
+
+    .header-con{
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .bal-box{
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+}
+
+
+
 .trans{
     display: flex;
     justify-content: space-between;
@@ -358,7 +405,6 @@
     z-index: 2;
     transition: all ease 1s;
     font-size: 14px;
-    font-family:'satoshi-medium';
  }
 
 
@@ -384,6 +430,15 @@
     color: #F2F2F2;
  }
 
+
+ @media screen and (max-width:900px){
+    .trans-box{
+        padding: 20px 10px;
+    }
+
+    
+ }
+
 .summ-right{
     flex-basis: 32%; 
 }
@@ -392,6 +447,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
+}
+
+.promo img{
+    width: 14px;
+    height: 14px;
 }
 
 .promo-field{
@@ -558,48 +618,6 @@
     object-fit: cover;
 }
 
-
-@media screen and (max-width:900px){
-    .sidebar{
-        display: none;
-    }
-
-    .main{
-        padding-left:0;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .bal-box{
-        width: auto;
-        flex-direction: column;
-    }
-
-    .bal-box img{
-        display: none;
-    }
-
-    .summ-flex{
-        flex-direction: column;
-    }
-
-    .summ-left{
-        flex-basis: 100%;
-    }
-
-    .summ-right{
-        flex-basis: 100%;
-    }
-
-    .card-text{
-        flex-basis: 100%;
-    }
-
-    .virtual{
-        flex-basis: 100%;
-        display: none;
-    }
-}
 
 @media screen and (max-width:370px){
     .select-btn{
